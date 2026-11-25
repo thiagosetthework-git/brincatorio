@@ -46,7 +46,7 @@ export default function App() {
         <button className="button button-primary hero-button" onClick={() => goTo('atividades')}>Quero ver as atividades <ArrowDown size={18}/></button>
         <div className="hero-assurance"><LockKeyhole size={16}/> Compra segura <i/><Zap size={16}/> Acesso imediato <i/><ShieldCheck size={16}/> Garantia 7 dias</div>
       </div>
-      <div className="hero-art" aria-label="Mockup do kit BRINCATÓRIO"><img className="hero-mockup-image" src="/Mockup%20Hero.png" alt="Mockup dos materiais do BRINCATÓRIO"/></div>
+      <div className="hero-art" aria-label="Mockup do kit BRINCATÓRIO"><img className="hero-mockup-image" src="/Mockup%20hero%20-%202.png" alt="Mockup dos materiais do BRINCATÓRIO"/></div>
     </section>
     <section className="ticker"><div className="ticker-track"><span>✳ MENOS TELAS</span><span>✳ MAIS IMAGINAÇÃO</span><span>✳ TEMPO DE QUALIDADE</span><span>✳ DIVERSÃO EM FAMÍLIA</span><span>✳ MENOS TELAS</span><span>✳ MAIS IMAGINAÇÃO</span><span>✳ TEMPO DE QUALIDADE</span><span>✳ DIVERSÃO EM FAMÍLIA</span></div></section>
     <section className="intro-section section-wrap" id="como-funciona">
