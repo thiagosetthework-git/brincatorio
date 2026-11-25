@@ -469,3 +469,53 @@
   .hero .hero-button{font-size:15px;min-height:50px}
   .hero .hero-assurance{font-size:9.5px;gap:5px}
 }
+
+
+/* Mais destaque para a promessa, chamada, botão e selos da hero */
+.hero .hero-lead{
+  font-size:18px;
+  line-height:1.65;
+  margin-bottom:18px;
+}
+.hero .hero-prompt{
+  font-size:17px;
+  line-height:1.55;
+  margin:0 0 18px;
+}
+.hero .hero-button{
+  font-size:16px;
+  padding:18px 26px;
+}
+.hero .hero-assurance{
+  font-size:12px;
+  gap:10px;
+  margin-top:14px;
+}
+@media(max-width:640px){
+  .hero .hero-lead{
+    font-size:16.5px;
+    line-height:1.52;
+    margin-bottom:13px;
+  }
+  .hero .hero-prompt{
+    font-size:17.5px;
+    line-height:1.45;
+    margin-bottom:12px;
+  }
+  .hero .hero-button{
+    font-size:17px;
+    min-height:54px;
+    padding:16px 18px;
+  }
+  .hero .hero-assurance{
+    font-size:11px;
+    gap:7px;
+    margin-top:10px;
+  }
+}
+@media(max-width:380px){
+  .hero .hero-lead{font-size:15.5px}
+  .hero .hero-prompt{font-size:16.5px}
+  .hero .hero-button{font-size:16px}
+  .hero .hero-assurance{font-size:10px;gap:5px}
+}
