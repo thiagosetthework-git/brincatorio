@@ -387,3 +387,42 @@
   .hero .hero-prompt{font-size:10px}
   .hero .hero-assurance{font-size:7px;gap:4px}
 }
+
+
+/* Tipografia mobile da hero: leitura confortável sem perder a primeira dobra */
+@media(max-width:640px){
+  .hero .hero-lead{
+    font-size:14px;
+    line-height:1.48;
+    margin-bottom:8px;
+    letter-spacing:0;
+  }
+  .hero .hero-prompt{
+    font-size:13px;
+    line-height:1.4;
+    margin-bottom:11px;
+  }
+  .hero .hero-button{
+    min-height:48px;
+    padding:13px 16px;
+    font-size:14px;
+    line-height:1.2;
+  }
+  .hero .hero-assurance{
+    gap:6px;
+    margin-top:10px;
+    font-size:9px;
+    line-height:1.25;
+  }
+  .hero .hero-assurance svg{
+    width:13px;
+    height:13px;
+    flex-basis:13px;
+  }
+}
+@media(max-width:380px){
+  .hero .hero-lead{font-size:13px;line-height:1.45}
+  .hero .hero-prompt{font-size:12px}
+  .hero .hero-button{font-size:13px;min-height:46px}
+  .hero .hero-assurance{font-size:8px;gap:5px}
+}
