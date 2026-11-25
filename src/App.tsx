@@ -36,8 +36,9 @@ export default function App() {
     <section className="hero section-wrap" id="inicio">
       <div className="hero-copy">
         <div className="eyebrow"><span className="eyebrow-dot"/> 30 IDEIAS PARA SAIR DO AUTOMÁTICO</div>
-        <h1>Desligue as telas.<br/><span>Ligue a imaginação!</span></h1>
-        <p className="hero-lead">Momentos simples podem virar memórias incríveis. Tenha 30 atividades práticas para brincar, criar e se conectar com seu filho — sem depender de telas.</p>
+        <h1>Seu filho larga o celular <span>sem briga</span> quando você tem a resposta certa na mão.</h1>
+        <p className="hero-lead">30 atividades sem tela, prontas para usar hoje. Em menos de 5 minutos você já tem uma atividade no ar e a tela fora de cena — hoje mesmo.</p>
+        <p className="hero-prompt">Você abre, escolhe uma e começa agora.</p>
         <ul className="hero-points"><li><span><Check size={15}/></span> Ideias fáceis para colocar em prática</li><li><span><Check size={15}/></span> Para diferentes momentos e ritmos</li><li><span><Check size={15}/></span> Mais criatividade e conexão em família</li></ul>
         <button className="button button-primary hero-button" onClick={() => goTo('atividades')}>Quero ver as atividades <ArrowDown size={18}/></button>
         <div className="hero-assurance"><ShieldCheck size={16}/> Material digital <i/> Acesso após aprovação</div>
