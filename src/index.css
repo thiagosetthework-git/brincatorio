@@ -566,3 +566,20 @@
     margin-bottom:24px;
   }
 }
+
+
+/* Depoimentos: prova social antes da apresentação da oferta */
+.testimonials-section{background:#fff7eb;padding:76px 0 82px;border-top:1px solid #f1e4d3;border-bottom:1px solid #f1e4d3}
+.testimonials-wrap{max-width:1050px;text-align:center}
+.testimonials-wrap h2{font-size:clamp(34px,4.5vw,48px);line-height:1.08;margin:12px 0}
+.testimonials-lead{max-width:620px;margin:0 auto 30px;color:#706357;font-size:15px;line-height:1.65}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:20px}
+.testimonial-card{margin:0;padding:10px;background:#fff;border:1px solid #f0e3d3;border-radius:18px;box-shadow:0 12px 28px #60401c12;overflow:hidden}
+.testimonial-card img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:top;border-radius:11px}
+@media(max-width:700px){
+  .testimonials-section{padding:58px 0 62px}
+  .testimonials-grid{grid-template-columns:1fr;gap:15px;max-width:440px;margin-inline:auto}
+  .testimonial-card{padding:8px;border-radius:15px}
+  .testimonial-card img{max-height:none}
+  .testimonials-lead{font-size:14px;margin-bottom:22px}
+}
