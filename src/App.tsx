@@ -66,6 +66,18 @@ export default function App() {
       <article><span>🤯</span><p><strong>Você até tenta atividades</strong>, mas a criança perde o interesse em 5 minutos e volta para a tela.</p></article>
       <article><span>😩</span><p><strong>Dias de chuva, férias e fins de semana</strong> viram um campo de batalha em casa.</p></article>
     </div><div className="pain-conclusion"><p><strong>A culpa não é sua.</strong> Ninguém ensina as mães a terem uma alternativa pronta na hora da crise.</p><b>O BRINCATÓRIO resolve isso.</b></div></div></section>
+    <section className="testimonials-section">
+      <div className="section-wrap testimonials-wrap">
+        <div className="section-kicker">EXPERIÊNCIAS REAIS</div>
+        <h2>Quem conhece o BRINCATÓRIO, <span>compartilha.</span></h2>
+        <p className="testimonials-lead">Veja algumas mensagens de quem já descobriu novas possibilidades de brincar em família.</p>
+        <div className="testimonials-grid">
+          <figure className="testimonial-card"><img src="/conversa-3.png" alt="Depoimento de cliente sobre o BRINCATÓRIO" loading="lazy"/></figure>
+          <figure className="testimonial-card"><img src="/direct-2.png" alt="Mensagem de cliente sobre o BRINCATÓRIO" loading="lazy"/></figure>
+          <figure className="testimonial-card"><img src="/conversa-1.png" alt="Relato de cliente sobre o BRINCATÓRIO" loading="lazy"/></figure>
+        </div>
+      </div>
+    </section>
     <section className="offer-section" id="oferta"><div className="section-wrap offer-wrap"><div className="offer-copy"><img className="offer-family-photo" src="/Ma%CC%83e%20e%20filha%20em%20atividade%20criativa.png" alt="Mãe e filha em atividade criativa com o BRINCATÓRIO" loading="lazy"/><div className="section-kicker">TUDO O QUE VOCÊ VAI RECEBER</div><h2>Um kit completo para<br/><span>brincar mais em família.</span></h2><p>Ao garantir o BRINCATÓRIO, você recebe todos estes materiais digitais para acessar e aproveitar no seu ritmo:</p></div>
       <div className="price-card"><div className="price-tag"><Sparkles size={15}/> KIT DIGITAL COMPLETO</div><div className="price-title">BRINCATÓRIO</div><div className="price-includes">
           <div><Check size={15}/><span><b>Kit Principal:</b> 30 atividades completas com passo a passo</span></div>
