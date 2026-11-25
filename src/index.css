@@ -73,3 +73,17 @@
 
 /* Lista completa de materiais dentro do quadro de oferta */
 .price-includes{display:grid;gap:10px;margin:18px 0 20px;text-align:left}.price-includes>div{display:flex;align-items:flex-start;gap:9px;font-size:11px;line-height:1.45;font-weight:700;color:#62594f}.price-includes svg{flex-shrink:0;margin-top:1px;color:#6d9a54}.price-includes b{font-weight:1000}@media(max-width:640px){.price-includes{gap:9px;margin:16px 0 19px}.price-includes>div{font-size:11px}}
+
+/* Carrossel animado de materiais: capas maiores e títulos no topo */
+.activity-carousel{width:100%;overflow:hidden;padding:8px 0 18px}
+.activity-track{display:flex;align-items:stretch;gap:18px;width:max-content;animation:activity-carousel-scroll 42s linear infinite}
+.activity-carousel:hover .activity-track{animation-play-state:paused}
+.activity-card{width:300px;min-height:410px;flex:0 0 300px;justify-content:flex-start;padding:18px;border-radius:20px}
+.activity-card h3{order:0;min-height:54px;display:flex;align-items:center;font:600 22px/1.12 'Fredoka';margin:0 0 12px;letter-spacing:-.025em}
+.activity-image{height:270px;margin:0 0 14px;padding:8px;border-radius:14px;background:#ffffffc9;display:grid;place-items:center;overflow:hidden}
+.activity-image img{width:100%;height:100%;object-fit:contain;display:block}
+.activity-bottom{margin-top:auto;padding-top:12px;font-size:9px}
+@keyframes activity-carousel-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:850px){.activity-card{width:280px;flex-basis:280px;min-height:390px}.activity-image{height:245px}}
+@media(max-width:640px){.activity-carousel{margin-inline:-5.5%;width:111%;padding:6px 0 16px}.activity-track{gap:12px;animation-duration:34s}.activity-card{width:78vw;flex-basis:78vw;min-height:390px;padding:15px}.activity-card h3{font-size:21px;min-height:48px}.activity-image{height:260px;margin-bottom:12px;padding:7px}.activity-bottom{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.activity-track{animation:none}}
