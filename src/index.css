@@ -251,3 +251,12 @@
   .hero .hero-lead{font-size:11px}
   .hero .hero-points li{font-size:9px}
 }
+
+
+/* Garantir o mockup antes da headline na ordem mobile */
+@media(max-width:640px){
+  .hero{display:flex;flex-direction:column}
+  .hero-copy{display:contents}
+  .hero .hero-art{order:-2}
+  .hero h1{order:-1}
+}
