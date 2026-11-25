@@ -164,3 +164,16 @@
 @media(max-width:380px){
   .activity-card{width:90vw;flex-basis:90vw;height:auto;aspect-ratio:1 / 1}
 }
+
+
+/* Leitura mais clara dos materiais dentro do quadro da oferta */
+.price-includes{gap:12px}
+.price-includes>div{font-size:13px;line-height:1.5}
+.price-includes svg{width:17px;height:17px;flex:0 0 17px}
+@media(max-width:640px){
+  .price-card{padding:24px 18px}
+  .price-includes{gap:12px;margin:18px 0 21px}
+  .price-includes>div{font-size:13px;line-height:1.5;gap:9px}
+  .price-includes svg{width:17px;height:17px;flex:0 0 17px}
+  .offer-copy>p{font-size:13px;line-height:1.65}
+}
