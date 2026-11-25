@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowDown, ArrowRight, Check, ChevronDown, Download, LockKeyhole, Menu, Printer, ShieldCheck, Sparkles, X } from 'lucide-react'
+import { ArrowDown, ArrowRight, Check, ChevronDown, Download, LockKeyhole, Menu, Printer, ShieldCheck, Sparkles, Zap, X } from 'lucide-react'
 
 const checkoutUrl = 'https://pay.cakto.com.br/wcys8zr_1365256'
 const activities = [
@@ -41,7 +41,7 @@ export default function App() {
         <p className="hero-prompt">Você abre, escolhe uma e começa agora.</p>
         <ul className="hero-points"><li><span><Check size={15}/></span> Ideias fáceis para colocar em prática</li><li><span><Check size={15}/></span> Para diferentes momentos e ritmos</li><li><span><Check size={15}/></span> Mais criatividade e conexão em família</li></ul>
         <button className="button button-primary hero-button" onClick={() => goTo('atividades')}>Quero ver as atividades <ArrowDown size={18}/></button>
-        <div className="hero-assurance"><ShieldCheck size={16}/> Material digital <i/> Acesso após aprovação</div>
+        <div className="hero-assurance"><LockKeyhole size={16}/> Compra segura <i/><Zap size={16}/> Acesso imediato <i/><ShieldCheck size={16}/> Garantia 7 dias</div>
       </div>
       <div className="hero-art" aria-label="Mockup do kit BRINCATÓRIO"><img className="hero-mockup-image" src="/Mockup%20Hero.png" alt="Mockup dos materiais do BRINCATÓRIO"/></div>
     </section>
