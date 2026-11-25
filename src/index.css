@@ -453,3 +453,19 @@
   .hero .hero-button{font-size:15px;min-height:50px}
   .hero .hero-assurance{font-size:9.5px;gap:5px}
 }
+
+
+/* Hero mobile: textos mais legíveis e CTA/selos mais próximos da faixa */
+@media(max-width:640px){
+  .hero{padding-bottom:0}
+  .hero .hero-lead{font-size:15.5px;line-height:1.48;margin-bottom:9px}
+  .hero .hero-prompt{font-size:16.5px;line-height:1.42;margin-bottom:8px}
+  .hero .hero-button{margin-top:5px;font-size:16px;min-height:52px;padding:15px 16px}
+  .hero .hero-assurance{margin-top:7px;margin-bottom:0;font-size:10.5px;gap:7px}
+}
+@media(max-width:380px){
+  .hero .hero-lead{font-size:14.5px;line-height:1.45}
+  .hero .hero-prompt{font-size:15.5px}
+  .hero .hero-button{font-size:15px;min-height:50px}
+  .hero .hero-assurance{font-size:9.5px;gap:5px}
+}
