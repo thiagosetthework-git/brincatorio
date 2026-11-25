@@ -519,3 +519,29 @@
   .hero .hero-button{font-size:16px}
   .hero .hero-assurance{font-size:10px;gap:5px}
 }
+
+
+/* Foto de mãe e filha na apresentação do kit completo */
+.offer-family-photo{
+  display:block;
+  width:100%;
+  max-width:500px;
+  height:auto;
+  max-height:300px;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  object-position:center;
+  border-radius:22px;
+  margin:0 0 28px;
+  box-shadow:0 14px 34px #60401c1c;
+}
+@media(max-width:640px){
+  .offer-family-photo{
+    width:100%;
+    max-width:none;
+    max-height:none;
+    aspect-ratio:4 / 3;
+    border-radius:18px;
+    margin-bottom:22px;
+  }
+}
