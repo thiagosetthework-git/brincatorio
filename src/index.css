@@ -106,3 +106,14 @@
   .activity-card{width:90vw;flex-basis:90vw}
   .activity-image{height:300px}
 }
+
+
+/* Cards do carrossel somente com as capas dos materiais */
+.activity-card{min-height:380px;padding:12px;justify-content:center}
+.activity-image{height:340px;width:100%;margin:0;padding:4px;border-radius:14px}
+@media(max-width:850px){.activity-card{min-height:360px;padding:10px}.activity-image{height:330px}}
+@media(max-width:640px){
+  .activity-card{width:90vw;flex-basis:90vw;min-height:0;height:440px;padding:8px}
+  .activity-image{height:100%;min-height:0;margin:0;padding:3px;border-radius:12px}
+}
+@media(max-width:380px){.activity-card{width:92vw;flex-basis:92vw;height:420px}}
