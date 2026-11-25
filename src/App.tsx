@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { ArrowDown, ArrowRight, Check, ChevronDown, Download, LockKeyhole, Menu, Printer, ShieldCheck, Sparkles, Zap, X } from 'lucide-react'
 
 const checkoutUrl = 'https://pay.cakto.com.br/wcys8zr_1365256'
@@ -23,6 +23,11 @@ const faqs = [
 export default function App() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
   const [menuOpen, setMenuOpen] = useState(false)
+  const carouselRef = useRef<HTMLDivElement>(null)
+  const dragRef = useRef<{ startX: number; startScroll: number; active: boolean }>({ startX: 0, startScroll: 0, active: false })
+  const handleCarouselPointerDown = (event: React.PointerEvent<HTMLDivElement>) => { dragRef.current = { startX: event.clientX, startScroll: event.currentTarget.scrollLeft, active: true }; event.currentTarget.setPointerCapture(event.pointerId) }
+  const handleCarouselPointerMove = (event: React.PointerEvent<HTMLDivElement>) => { if (dragRef.current.active) event.currentTarget.scrollLeft = dragRef.current.startScroll - (event.clientX - dragRef.current.startX) }
+  const stopCarouselDrag = () => { dragRef.current.active = false }
   const goTo = (id: string) => { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false) }
   return <main>
     <div className="top-note"><Sparkles size={15}/> MAIS BRINCADEIRAS, MENOS TEMPO NAS TELAS <Sparkles size={15}/></div>
@@ -53,7 +58,7 @@ export default function App() {
     </section>
 <section className="activities-section" id="atividades"><div className="section-wrap">
       <div className="activities-heading"><div><div className="section-kicker">UM GOSTINHO DO QUE VEM AÍ</div><h2>Ideias que viram<br/><span>momentos especiais.</span></h2></div><p>Um universo de propostas para estimular a criatividade, a observação e a interação — com leveza e diversão.</p></div>
-      <div className="activity-carousel"><div className="activity-track">{[...activities, ...activities].map((item, index) => <article className={'activity-card ' + item.color} key={item.n + '-' + index}><h3>{item.title}</h3><div className="activity-image"><img src={item.image} alt={item.alt} loading="lazy"/></div><div className="activity-bottom"><span>{item.kind}</span><span>✳</span></div></article>)}</div></div>
+      <div className="activity-carousel" ref={carouselRef} onPointerDown={handleCarouselPointerDown} onPointerMove={handleCarouselPointerMove} onPointerUp={stopCarouselDrag} onPointerCancel={stopCarouselDrag}><div className="activity-track">{[...activities, ...activities].map((item, index) => <article className={'activity-card ' + item.color} key={item.n + '-' + index}><h3>{item.title}</h3><div className="activity-image"><img src={item.image} alt={item.alt} loading="lazy"/></div><div className="activity-bottom"><span>{item.kind}</span><span>✳</span></div></article>)}</div></div>
       <div className="activity-note"><Sparkles size={17}/> Estas são apenas algumas ideias para você conhecer a proposta. O kit completo reúne 30 atividades.</div>
     </div></section>
     <section className="connection-section section-wrap"><div className="connection-art"><div className="connection-circle"><span>👩‍👧</span><span className="heart-float">♥</span><span className="spark-float">✦</span></div><div className="connection-label">O MELHOR DA BRINCADEIRA<br/>É ESTAR JUNTO.</div></div><div className="connection-copy"><div className="section-kicker">MAIS DO QUE PASSAR O TEMPO</div><h2>O melhor presente<br/>é a sua <span>presença.</span></h2><p>Entre uma tarefa e outra, existe espaço para uma pausa, uma risada e uma descoberta. As atividades são um ponto de partida para criar esses momentos — sem complicar a rotina.</p><div className="connection-quote">“A brincadeira começa com uma ideia. A lembrança fica para sempre.”</div></div></section>
