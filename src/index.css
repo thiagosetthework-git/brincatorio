@@ -426,3 +426,16 @@
   .hero .hero-button{font-size:13px;min-height:46px}
   .hero .hero-assurance{font-size:8px;gap:5px}
 }
+
+
+/* Hero mobile: reforça prompt, CTA e selos antes da faixa animada */
+@media(max-width:640px){
+  .hero .hero-prompt{font-size:15px;line-height:1.42;margin-bottom:12px}
+  .hero .hero-button{font-size:15px;min-height:50px;padding:14px 16px}
+  .hero .hero-assurance{font-size:10px;gap:7px;margin-top:11px}
+}
+@media(max-width:380px){
+  .hero .hero-prompt{font-size:14px}
+  .hero .hero-button{font-size:14px;min-height:48px}
+  .hero .hero-assurance{font-size:9px;gap:5px}
+}
