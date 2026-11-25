@@ -70,3 +70,6 @@
 
 /* Pequeno respiro entre o mockup da hero e a faixa animada no celular */
 @media(max-width:640px){.hero-art{margin-bottom:0}}
+
+/* Lista completa de materiais dentro do quadro de oferta */
+.price-includes{display:grid;gap:10px;margin:18px 0 20px;text-align:left}.price-includes>div{display:flex;align-items:flex-start;gap:9px;font-size:11px;line-height:1.45;font-weight:700;color:#62594f}.price-includes svg{flex-shrink:0;margin-top:1px;color:#6d9a54}.price-includes b{font-weight:1000}@media(max-width:640px){.price-includes{gap:9px;margin:16px 0 19px}.price-includes>div{font-size:11px}}
