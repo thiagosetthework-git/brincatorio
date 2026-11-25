@@ -87,3 +87,22 @@
 @media(max-width:850px){.activity-card{width:280px;flex-basis:280px;min-height:390px}.activity-image{height:245px}}
 @media(max-width:640px){.activity-carousel{margin-inline:-5.5%;width:111%;padding:6px 0 16px}.activity-track{gap:12px;animation-duration:34s}.activity-card{width:78vw;flex-basis:78vw;min-height:390px;padding:15px}.activity-card h3{font-size:21px;min-height:48px}.activity-image{height:260px;margin-bottom:12px;padding:7px}.activity-bottom{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.activity-track{animation:none}}
+
+
+/* Ajuste mobile e arraste manual do carrossel de materiais */
+.activity-carousel{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;cursor:grab;touch-action:pan-y;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.activity-carousel::-webkit-scrollbar{display:none}
+.activity-carousel:active{cursor:grabbing}
+.activity-carousel:hover .activity-track{animation-play-state:running}
+@media(max-width:640px){
+  .activity-carousel{margin-inline:-5.5%;width:111%;padding:8px 0 18px}
+  .activity-track{gap:12px;animation-duration:34s;will-change:transform}
+  .activity-card{width:88vw;flex-basis:88vw;min-height:420px;padding:14px}
+  .activity-card h3{font-size:22px;min-height:52px;margin-bottom:10px}
+  .activity-image{height:310px;margin-bottom:10px;padding:5px}
+  .activity-bottom{font-size:9px}
+}
+@media(max-width:380px){
+  .activity-card{width:90vw;flex-basis:90vw}
+  .activity-image{height:300px}
+}
