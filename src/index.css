@@ -545,3 +545,24 @@
     margin-bottom:22px;
   }
 }
+
+
+/* Texto de apoio da chamada final */
+.final-cta-lead{
+  max-width:620px;
+  margin:0 auto 26px;
+  color:#5b481d;
+  font-size:16px;
+  line-height:1.65;
+  font-weight:700;
+}
+.final-cta .button-dark{
+  text-decoration:none;
+}
+@media(max-width:640px){
+  .final-cta-lead{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:24px;
+  }
+}
