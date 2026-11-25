@@ -303,3 +303,87 @@
     object-fit:contain;
   }
 }
+
+
+/* Hero mobile simplificada: mockup, promessa, explicação e CTA na primeira dobra */
+@media(max-width:640px){
+  .hero{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    padding-top:0;
+    padding-bottom:10px;
+  }
+  .hero-copy{display:contents}
+  .hero .hero-art{
+    order:-2;
+    position:relative;
+    left:50%;
+    width:100vw;
+    max-width:100vw;
+    height:auto;
+    aspect-ratio:1680 / 944;
+    min-height:0;
+    margin:0 0 8px;
+    padding:0;
+    transform:translateX(-50%);
+    display:block;
+  }
+  .hero .hero-mockup-image{
+    display:block;
+    width:100%;
+    height:100%;
+    max-width:100%;
+    max-height:none;
+    margin:0;
+    aspect-ratio:1680 / 944;
+    object-fit:contain;
+    object-position:center;
+  }
+  .hero h1{
+    order:-1;
+    font-size:clamp(29px,8.1vw,36px);
+    line-height:1.02;
+    margin:0 0 8px;
+    max-width:none;
+  }
+  .hero .hero-lead{
+    order:0;
+    font-size:12px;
+    line-height:1.42;
+    margin:0 0 6px;
+    max-width:none;
+  }
+  .hero .hero-prompt{
+    order:1;
+    font-size:11px;
+    line-height:1.3;
+    margin:0 0 10px;
+    max-width:none;
+  }
+  .hero .hero-button{
+    order:2;
+    width:100%;
+    min-height:43px;
+    padding:11px 14px;
+    font-size:12px;
+  }
+  .hero .hero-assurance{
+    order:3;
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap:5px;
+    margin:8px 0 0;
+    font-size:8px;
+    white-space:nowrap;
+  }
+  .hero .hero-assurance svg{width:12px;height:12px;flex:0 0 12px}
+}
+@media(max-width:380px){
+  .hero h1{font-size:29px}
+  .hero .hero-lead{font-size:11px}
+  .hero .hero-prompt{font-size:10px}
+  .hero .hero-assurance{font-size:7px;gap:4px}
+}
