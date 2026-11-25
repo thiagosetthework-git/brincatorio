@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowDown, ArrowRight, Check, ChevronDown, Download, Heart, LockKeyhole, Menu, Printer, ShieldCheck, Sparkles, X } from 'lucide-react'
+import { ArrowDown, ArrowRight, Check, ChevronDown, Download, LockKeyhole, Menu, Printer, ShieldCheck, Sparkles, X } from 'lucide-react'
 
 const checkoutUrl = 'https://pay.cakto.com.br/wcys8zr_1365256'
 const activities = [
