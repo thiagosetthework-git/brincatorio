@@ -40,7 +40,6 @@ export default function App() {
     </header>
     <section className="hero section-wrap" id="inicio">
       <div className="hero-copy">
-        <div className="eyebrow"><span className="eyebrow-dot"/> 30 IDEIAS PARA SAIR DO AUTOMÁTICO</div>
         <h1>Seu filho larga o celular <span>sem briga</span> quando você tem a resposta certa na mão.</h1>
         <p className="hero-lead">30 atividades sem tela, prontas para usar hoje. Em menos de 5 minutos você já tem uma atividade no ar e a tela fora de cena — hoje mesmo.</p>
         <p className="hero-prompt">Você abre, escolhe uma e começa agora.</p>
