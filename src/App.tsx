@@ -3,10 +3,12 @@ import { ArrowDown, ArrowRight, Check, ChevronDown, Download, LockKeyhole, Menu,
 
 const checkoutUrl = 'https://pay.cakto.com.br/wcys8zr_1365256'
 const activities = [
-  { n: '01', title: 'Caça às cores', kind: 'OBSERVAÇÃO', color: 'coral', icon: '🎨' },
-  { n: '02', title: 'Detetive de formas', kind: 'DESCOBERTA', color: 'blue', icon: '🔎' },
-  { n: '03', title: 'História maluca', kind: 'CRIATIVIDADE', color: 'yellow', icon: '🦄' },
-  { n: '04', title: 'Missão dos sentidos', kind: 'MOVIMENTO', color: 'green', icon: '🌿' },
+  { n: '01', title: '30 Atividades Completas', kind: 'KIT PRINCIPAL', color: 'coral', image: '/kit-principal.png', alt: 'Kit principal com 30 atividades' },
+  { n: '02', title: 'Desafio dos 7 Dias Sem Tela', kind: 'DESAFIO', color: 'blue', image: '/desafio-7-dias.jpg', alt: 'Desafio dos 7 Dias Sem Tela' },
+  { n: '03', title: '10 Frases para Convencer Seu Filho', kind: 'MATERIAL DE APOIO', color: 'yellow', image: '/frases.jpg', alt: '10 frases para convencer seu filho a largar a tela' },
+  { n: '04', title: 'Jardim num Copo', kind: 'BÔNUS 01', color: 'green', image: '/jardim-num-copo.jpg', alt: 'Material Jardim num Copo' },
+  { n: '05', title: 'Show de Talentos da Família', kind: 'BÔNUS 02', color: 'purple', image: '/show-talentos.jpg', alt: 'Material Show de Talentos da Família' },
+  { n: '06', title: 'Guia Comece Aqui', kind: 'GUIA DE ORIENTAÇÃO', color: 'pink', image: '/guia-comece-aqui.jpg', alt: 'Guia Comece Aqui' },
 ]
 const faqs = [
   ['O que é o BRINCATÓRIO?', 'É um kit digital com 30 atividades sem tela, pensado para transformar momentos do dia a dia em oportunidades de diversão, criatividade e conexão em família.'],
@@ -65,7 +67,7 @@ export default function App() {
 </div></section>
     <section className="activities-section" id="atividades"><div className="section-wrap">
       <div className="activities-heading"><div><div className="section-kicker">UM GOSTINHO DO QUE VEM AÍ</div><h2>Ideias que viram<br/><span>momentos especiais.</span></h2></div><p>Um universo de propostas para estimular a criatividade, a observação e a interação — com leveza e diversão.</p></div>
-      <div className="activity-grid">{activities.map(item => <article className={'activity-card ' + item.color} key={item.n}><div className="activity-top"><span>ATIVIDADE {item.n}</span><span className="activity-kind">{item.kind}</span></div><div className="activity-emoji">{item.icon}</div><h3>{item.title}</h3><div className="activity-bottom"><span>UMA NOVA DESCOBERTA</span><span>✳</span></div></article>)}</div>
+      <div className="activity-grid">{activities.map(item => <article className={'activity-card ' + item.color} key={item.n}><div className="activity-top"><span>MATERIAL {item.n}</span><span className="activity-kind">{item.kind}</span></div><div className="activity-image"><img src={item.image} alt={item.alt} loading="lazy"/></div><h3>{item.title}</h3><div className="activity-bottom"><span>UM MATERIAL PARA BRINCAR</span><span>✳</span></div></article>)}</div>
       <div className="activity-note"><Sparkles size={17}/> Estas são apenas algumas ideias para você conhecer a proposta. O kit completo reúne 30 atividades.</div>
     </div></section>
     <section className="connection-section section-wrap"><div className="connection-art"><div className="connection-circle"><span>👩‍👧</span><span className="heart-float">♥</span><span className="spark-float">✦</span></div><div className="connection-label">O MELHOR DA BRINCADEIRA<br/>É ESTAR JUNTO.</div></div><div className="connection-copy"><div className="section-kicker">MAIS DO QUE PASSAR O TEMPO</div><h2>O melhor presente<br/>é a sua <span>presença.</span></h2><p>Entre uma tarefa e outra, existe espaço para uma pausa, uma risada e uma descoberta. As atividades são um ponto de partida para criar esses momentos — sem complicar a rotina.</p><div className="connection-quote">“A brincadeira começa com uma ideia. A lembrança fica para sempre.”</div></div></section>
