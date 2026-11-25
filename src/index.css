@@ -439,3 +439,17 @@
   .hero .hero-button{font-size:14px;min-height:48px}
   .hero .hero-assurance{font-size:9px;gap:5px}
 }
+
+
+/* Aproxima os textos finais da hero da faixa animada no mobile */
+@media(max-width:640px){
+  .hero{padding-bottom:2px}
+  .hero .hero-prompt{font-size:16px;line-height:1.4;margin-bottom:8px}
+  .hero .hero-button{font-size:16px;min-height:52px;padding:15px 16px}
+  .hero .hero-assurance{font-size:10.5px;gap:7px;margin-top:8px;margin-bottom:0}
+}
+@media(max-width:380px){
+  .hero .hero-prompt{font-size:15px}
+  .hero .hero-button{font-size:15px;min-height:50px}
+  .hero .hero-assurance{font-size:9.5px;gap:5px}
+}
