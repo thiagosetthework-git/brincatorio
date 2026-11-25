@@ -260,3 +260,30 @@
   .hero .hero-art{order:-2}
   .hero h1{order:-1}
 }
+
+
+/* Mockup em tela cheia no celular, sem recuo nas laterais */
+@media(max-width:640px){
+  .hero .hero-art{
+    position:relative;
+    left:50%;
+    width:100vw;
+    max-width:100vw;
+    height:auto;
+    min-height:0;
+    margin:0 0 3px;
+    padding:0;
+    transform:translateX(-50%);
+    display:block;
+  }
+  .hero .hero-mockup-image{
+    display:block;
+    width:100vw;
+    max-width:100vw;
+    height:auto;
+    max-height:none;
+    margin:0;
+    object-fit:contain;
+    object-position:center;
+  }
+}
